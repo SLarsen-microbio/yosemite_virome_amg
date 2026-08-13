@@ -12,6 +12,7 @@ Figures 1–3.
 
 ## Workflow
 
+```text
 Raw metagenomic reads
     ↓
 Trimmomatic
@@ -35,3 +36,4 @@ RPKM normalization
 AMG-carrying viral fraction
     ↓
 Figures and statistical summaries
+```
