@@ -136,7 +136,11 @@ Intermediate files such as FASTQs, BAMs, assemblies, and large annotation output
 
 ## Citation
 
-A permanent archived version of this repository and citation information will be provided through Zenodo upon release of the manuscript-associated version.
+The manuscript-associated release of this analysis repository is permanently archived on Zenodo:
+
+**Larsen, Shari. Yosemite Alpine Lake Virome and Auxiliary Metabolic Gene Analysis. Version 1.0.0. Zenodo.**
+
+DOI: [10.5281/zenodo.21939209](https://doi.org/10.5281/zenodo.21939209)
 
 ## License
 
