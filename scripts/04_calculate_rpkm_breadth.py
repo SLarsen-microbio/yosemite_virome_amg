@@ -191,7 +191,7 @@ def main():
 
     metadata = pd.read_csv(METADATA, sep="\t")
 
-    samples = metadata["sample"].tolist()
+    samples = metadata["sample_id"].tolist()
 
     matrix = {}
 
