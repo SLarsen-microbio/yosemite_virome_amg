@@ -1,0 +1,53 @@
+# ------------------------------------------------------------
+# Yosemite virome/AMG repository
+# Ignore large sequencing files, generated analysis outputs,
+# and local/system files that should not be tracked by Git.
+# ------------------------------------------------------------
+
+# Raw and trimmed sequencing reads
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Alignment files
+*.bam
+*.bai
+*.sam
+*.cram
+*.crai
+
+# Bowtie2 indexes
+*.bt2
+*.bt2l
+
+# Large/generated analysis directories
+results/
+data/
+
+# Assembly intermediates
+*.gfa
+
+# Compressed archives
+*.tar
+*.tar.gz
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Linux/editor temporary files
+*~
+*.swp
+*.swo
+
+# Logs
+*.log
