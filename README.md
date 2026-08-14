@@ -140,4 +140,4 @@ A permanent archived version of this repository and citation information will be
 
 ## License
 
-License information will be added prior to the archived repository release.
+This repository is released under the MIT License. See [`LICENSE`](LICENSE) for details.
