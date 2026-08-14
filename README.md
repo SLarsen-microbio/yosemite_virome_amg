@@ -103,7 +103,7 @@ metadata/sample_metadata.tsv
 
 Previously published metagenomic datasets are available through the public repositories identified in the metadata table.
 
-Five newly generated metagenomes (Y86, Y139, Y153, Y164, and Y166) are associated with NCBI BioProject **PRJNA1477654** and BioSample accessions listed in `sample_metadata.tsv`. These sequence data are currently under embargo and are scheduled for public release on December 1, 2026.
+Five newly generated metagenomes (Y86, Y139, Y153, Y164, and Y166) are associated with NCBI BioProject **PRJNA1477654** and BioSample accessions listed in `sample_metadata.tsv`. These sequence data are currently under embargo and are scheduled for public release on December 31, 2026.
 
 Users reproducing the analyses should download or otherwise obtain the appropriate sequencing data and provide local input-file paths when running the analysis scripts.
 
