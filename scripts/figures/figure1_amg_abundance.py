@@ -214,6 +214,10 @@ amg_genomes_resolved = set(
 # ---------------------------------------------------------------------
 # Samples shown in Figure 1
 # ---------------------------------------------------------------------
+# Legacy analysis sample names are retained because they correspond to
+# column names in the RPKM matrix. Public JGI/IMG identifiers are:
+# Y16_292_L2_t0  = IMG:3300056395 (Lukens, L2 Control, T0)
+# Y16_177_UC1_t0 = IMG:3300056358 (Upper Cathedral, UC1 Control, T0)
 
 sample_order = [
     "SRR5830790",
