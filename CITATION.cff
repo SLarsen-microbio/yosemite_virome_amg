@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use the code in this repository, please cite the associated software release and manuscript."
+
+title: "Yosemite Alpine Lake Virome and Auxiliary Metabolic Gene Analysis"
+
+type: software
+
+authors:
+  - family-names: "Larsen"
+    given-names: "Shari"
+
+repository-code: "https://github.com/SLarsen-microbio/yosemite_virome_amg"
+
+license: "MIT"
+
+version: "1.0.0"
+
+keywords:
+  - viromics
+  - auxiliary metabolic genes
+  - viral ecology
+  - metagenomics
+  - alpine lakes
+  - Yosemite
+  - VIBRANT
+  - viral genomics
