@@ -10,8 +10,7 @@ set -euo pipefail
 #
 # Original analysis:
 #   Input: 695 dereplicated viral genome representatives
-#   VIBRANT identified 710 putative phages.
-#
+#  
 # AMG annotations used in downstream analyses were obtained from:
 #   VIBRANT_AMG_individuals_derep95_all17.tsv
 #   VIBRANT_AMG_pathways_derep95_all17.tsv
