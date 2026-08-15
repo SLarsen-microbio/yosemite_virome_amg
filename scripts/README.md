@@ -68,11 +68,11 @@ The user supplies the sample identifier, the VirSorter2 `final-viral-combined.fa
 
 ### `01_dereplicate_viral_genomes.sh`
 
-Dereplicates complete, high-, and medium-quality viral genomes using CD-HIT-EST v4.8.1.
+Dereplicates complete-, high-, and medium-quality viral genomes using CD-HIT-EST v4.8.1.
 
 Original analysis:
 
-- Input: 909 complete-, high- and medium-quality viral sequences
+- Input: 909 complete-, high- and medium-quality viral genomes
 - Clustering threshold: 95% nucleotide identity
 - Minimum alignment coverage: 85% of the shorter sequence
 - Output: 695 dereplicated viral species representatives
@@ -96,7 +96,7 @@ Downstream analyses use the VIBRANT individual-AMG and AMG-pathway output tables
 
 ### `03_map_reads_bowtie2.sh`
 
-Maps paired-end metagenomic reads to the 695 dereplicated viral genome representatives using Bowtie2 v2.5.1.
+Maps paired-end metagenomic reads to the 695 dereplicated viral species representatives using Bowtie2 v2.5.1.
 
 The user supplies the sample identifier, paired trimmed read files, and viral genome FASTA when running the script.
 
