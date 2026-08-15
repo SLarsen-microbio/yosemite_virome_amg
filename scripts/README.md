@@ -34,6 +34,38 @@ Original analysis:
 
 The user supplies the sample identifier and paths to the paired trimmed read files when running the script.
 
+### `00c_identify_viruses_virsorter2.sh`
+
+Identifies viral sequences in assembled metagenomic contigs using VirSorter2 v2.2.4.
+
+Original analysis:
+
+- input contigs were pre-filtered to ≥1 kb
+- minimum viral sequence length: 5000 bp
+- 16 threads
+- all viral groups enabled
+
+Key parameters:
+
+```text
+--min-length 5000
+-j 16
+all
+```
+
+### `00d_quality_check_checkv.sh`
+
+Assesses viral genome quality using CheckV v1.0.3.
+
+Original analysis:
+
+- `checkv end_to_end`
+- 16 threads
+- CheckV database v1.5
+
+The user supplies the sample identifier, the VirSorter2 `final-viral-combined.fa` file, and the local path to the CheckV database.
+
+
 ### `01_dereplicate_viral_genomes.sh`
 
 Dereplicates high- and medium-quality viral genomes using CD-HIT-EST v4.8.1.
@@ -50,7 +82,7 @@ Key parameters:
 ```bash
 -c 0.95
 -aS 0.85
-```
+
 
 ### `02_run_vibrant.sh`
 
