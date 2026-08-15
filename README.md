@@ -23,6 +23,10 @@ yosemite_virome_amg/
 │   └── sample_metadata.tsv
 └── scripts/
     ├── README.md
+    ├── 00a_qc_and_trim_reads.sh
+    ├── 00b_assemble_megahit.sh
+    ├── 00c_identify_viruses_virsorter2.sh
+    ├── 00d_quality_check_checkv.sh
     ├── 01_dereplicate_viral_genomes.sh
     ├── 02_run_vibrant.sh
     ├── 03_map_reads_bowtie2.sh
@@ -55,7 +59,7 @@ The principal workflow was:
 2. Metagenome assembly with MEGAHIT.
 3. Viral sequence identification with VirSorter2.
 4. Viral genome quality assessment with CheckV.
-5. Dereplication of high- and medium-quality viral genomes using CD-HIT-EST.
+5. Dereplication of complete-, high-, and medium-quality viral genomes using CD-HIT-EST.
 6. Identification and annotation of auxiliary metabolic genes using VIBRANT.
 7. Recruitment of metagenomic reads to dereplicated viral genomes using Bowtie2.
 8. Viral abundance calculation using a 75% breadth-of-coverage filtered RPKM approach.
@@ -66,12 +70,12 @@ Detailed commands and parameters for the downstream viral and AMG analyses are p
 
 ## Viral genome dereplication
 
-High- and medium-quality viral genomes were dereplicated using CD-HIT-EST v4.8.1 at:
+Complete-, high-, and medium-quality viral genomes were dereplicated using CD-HIT-EST v4.8.1 at:
 
 - 95% nucleotide identity (`-c 0.95`)
 - 85% minimum alignment coverage of the shorter sequence (`-aS 0.85`)
 
-This resulted in **695 dereplicated viral genome representatives** used for downstream analyses.
+This resulted in 695 dereplicated viral species representatives used for downstream analyses.
 
 ## Viral abundance
 
