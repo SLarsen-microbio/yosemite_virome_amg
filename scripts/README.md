@@ -82,7 +82,7 @@ Key parameters:
 ```bash
 -c 0.95
 -aS 0.85
-
+```
 
 ### `02_run_vibrant.sh`
 
