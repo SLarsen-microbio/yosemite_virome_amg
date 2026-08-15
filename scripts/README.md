@@ -108,7 +108,9 @@ Generates the gene-neighborhood visualization for manuscript Figure 3 panel C us
 
 Major software versions used in the analysis include:
 
-- Trimmomatic v0.39
+- FastQC v0.11.8
+- fastp v1.0.1
+- MultiQC v1.30
 - MEGAHIT v1.1.5
 - VirSorter2 v2.2.4
 - CheckV v1.0.3
