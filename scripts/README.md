@@ -8,6 +8,32 @@ The repository contains analysis code and sample metadata. Raw sequencing reads,
 
 Run the core analysis scripts in numerical order:
 
+### `00a_qc_and_trim_reads.sh`
+
+Performs read quality assessment and preprocessing prior to metagenome assembly.
+
+The workflow includes:
+
+- quality assessment of raw reads with FastQC v0.11.8
+- paired-end read trimming with fastp v1.0.1
+- automatic paired-end adapter detection using `--detect_adapter_for_pe`
+- quality assessment of trimmed reads with FastQC
+- aggregation of quality-control reports with MultiQC v1.30
+
+Users supply the local directory containing downloaded or otherwise available paired-end FASTQ files.
+
+### `00b_assemble_megahit.sh`
+
+Assembles trimmed paired-end metagenomic reads independently for each sample using MEGAHIT v1.1.5.
+
+Original analysis:
+
+- paired-end assembly
+- 16 threads
+- otherwise default MEGAHIT parameters
+
+The user supplies the sample identifier and paths to the paired trimmed read files when running the script.
+
 ### `01_dereplicate_viral_genomes.sh`
 
 Dereplicates high- and medium-quality viral genomes using CD-HIT-EST v4.8.1.
