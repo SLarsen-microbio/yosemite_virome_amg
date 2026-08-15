@@ -51,7 +51,7 @@ Contains scripts used to generate the AMG-related manuscript figures.
 
 The principal workflow was:
 
-1. Quality trimming of metagenomic reads with Trimmomatic.
+1. Quality assessment of raw metagenomic reads with FastQC, read trimming and automatic paired-end adapter detection with fastp, and post-trimming quality assessment with FastQC and MultiQC.
 2. Metagenome assembly with MEGAHIT.
 3. Viral sequence identification with VirSorter2.
 4. Viral genome quality assessment with CheckV.
@@ -111,7 +111,9 @@ Users reproducing the analyses should download or otherwise obtain the appropria
 
 Major software versions used in the analysis were:
 
-- Trimmomatic v0.39
+- FastQC v0.11.8
+- fastp v1.0.1
+- MultiQC v1.30
 - MEGAHIT v1.1.5
 - VirSorter2 v2.2.4
 - CheckV v1.0.3
