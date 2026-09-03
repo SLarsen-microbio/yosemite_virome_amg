@@ -1,4 +1,4 @@
-# Yosemite Alpine Lake Virome and Auxiliary Metabolic Gene Analysis
+# Yosemite Alpine Lake and Auxiliary Metabolic Gene Analysis
 
 Analysis code and metadata supporting the manuscript:
 
