@@ -1,3 +1,8 @@
+> **Archived repository**
+>
+> This repository preserves an earlier version of the Yosemite virome and auxiliary metabolic gene analysis and is retained for reference to the associated Zenodo record.
+>
+> The current, unified analysis workflow is maintained in the [`yosemite_virome`](https://github.com/SLarsen-microbio/yosemite_virome) repository.
 # Yosemite Lake and Auxiliary Metabolic Gene Analysis
 
 Analysis code and metadata supporting the manuscript:
